@@ -4,32 +4,46 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to right, #5de0e6,#004aad);
     color: #fff;
 
 }
 
 .container{
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
     padding: 20px;
-    text-align: center
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
     
 }
-h1{
+p{
+    max-width: 1900px;
+}
+
+.sobre{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    padding: 40px;
+}
+div.container h1{
 margin-top: 10px;
-font-size: 50px;
-color: #ffffff
+font-size: 100px;
+color: #ffffff;
+text-align: center;
+vertical-align: top;
+display: inline-block;
 }
 header p{
-    font-size: 14px;
+    font-size: 30px;
+    font-weight: 300;
     color: #cfcfcf
 }
 
-.topo{
-    background-color: ;
-}
 .topo img{
     width: 300px;
     height: 300px;
@@ -38,17 +52,30 @@ header p{
     margin-bottom: 15px;
 
 }
+.topo ul{
+    list-style: none;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
 nav{
     display: flex;
     justify-content: center;
     gap: 20px;
     background-color: #111;
+    padding: 10px;
 }
 
 
 
 nav ul{
-    background-color: #333;
+    background-color: #111;
     width: 100%;
     padding: 20px;
     list-style: none;
@@ -61,31 +88,52 @@ nav a{
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 #sobre{
     background: linear-gradient(to right, #5de0e6,#004aad);
     text-align: center;
     font-size: 18px;
     padding: 40px 20px;
-    color: #222;
+    color: #111;
 }
 #sobre img{
     max-width: 200px;
     margin-bottom: 20px;
+   position: left;
+    
+}
+#sobre p{
+    font-size: 90px;
+    max-width: 600px;
+    margin: auto;
+    color: #000;
+    display: flex;
 }
 #projetos{
     background-color: #004aad,#00ccff;
+    padding: 40px 20px;
     text-align: center;
 }
-
-
+#projetos-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#projetos img{
+    width: 120px;
+    margin: 20px;
+    height: auto;
+}
 section{
     padding: 60px 0px;
     text-align: center;
 }
 
 h2{
-    background-color: #333;
+    background-color: #111;
     width: 100%;
     font-size: 2rem;
     margin-bottom: 20px;
@@ -104,21 +152,22 @@ input,textarea{
     padding: 10px;
     border: none;
     border-radius: 5px;
+    color: #000;
 
 }
 button[type="submit"]{
     padding: 10px;
-    background-color: #333;
+    background-color: #111;
     color: white;
     border: none;
     cursor: pointer;
 }
 button [type="submit"]:hover{
 background-color: #00ccff;
-color: #333;
+color: #111;
 }
 footer{
-     background-color: #333;
+     background-color: #111;
     width: 100%;
     padding: 20px;
     
